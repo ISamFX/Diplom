@@ -1,0 +1,230 @@
+@import "../../device.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero_container {
+    background-color:  #484283;
+    position: relative;
+    z-index: 0;
+    width: 1920px;
+    height: 528px;
+}
+
+nav {
+    position: absolute;
+    width: 1180px;
+    height: 44px;
+    left: 370px;
+    top: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-family: 'Intro Bold';
+    font-style: regular;
+    font-size: 14px;
+ }
+
+.header_container{
+    position: absolute;
+    width: 1180px;
+    height: 44px;
+    left: 370px;
+    top: 20px; 
+}
+
+.logo {    
+    font-family: 'Intro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+    @include respond-to(mobile) {
+        font-size: 30p;
+        text-align: center;
+    }
+}
+.nav_list{
+    width: 680px;
+    height: 14px;
+    justify-content: space-between;
+    display: flex;
+ 
+    list-style: none;  
+        
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+ }
+ .nav_bnt a {    
+    text-decoration: none;
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF; 
+  }
+
+.nav_bnt a:active {
+    color: #9f9d9d;
+  }
+.nav_bnt a:hover {
+    color: #FFF4EE;
+  }
+.nav_bnt a:focus {
+    color: #FFF4EE;
+  }
+.basket_bnt {
+
+    border: none; 
+    outline: none;
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    background-color:  #484283;
+    color: #FFFFFF;    
+} 
+.lines {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    border: 0;
+    background-color: #FFFFFF; 
+  
+    span {
+      width: 30px;
+      height: 5px;
+      display: inline-block;
+      background-color: white;
+    }
+  }
+.hero_heading{
+  position: absolute;
+  width: 580px;
+  height: 100px;
+  left: 370px;
+  top: 164px;
+  font-family: 'Intro Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: left;
+  line-height: 140%;
+  color: white;
+  @include respond-to(mobile) {
+      font-size: 30p;
+      text-align: center;
+    }
+}
+.hero_textcontainer{
+    max-width: 580px;
+    position: relative;
+    z-index: 1;
+    @include respond-to(mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    }
+}
+.hero_description{
+    position: absolute;
+    width: 480px;
+    height: 44px;
+    left: 370px;
+    top: 284px;
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    @include respond-to(mobile) {
+    text-align: center;
+    }
+}
+.btn_hero_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    top: 368px;
+    left: 370px;
+    background: #F14F4F;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+
+
+    
+    @include respond-to(mobile) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+}
+
+.btn_hero{
+    background: #F14F4F;
+    border: none;
+    width: 156px;
+    height: 16px;
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    @include respond-to(mobile) {
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+
+}
+.back_text{
+    position: absolute;
+    width: 980px;
+    height: 200px;
+    left: 515px;
+    top: 240px;
+
+    font-family: 'Intro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 200px;
+    color: rgba(255, 255, 255, 0.12);
+    @include respond-to(mobile) {
+      display: none;    
+    }
+}
+
+
+
+
